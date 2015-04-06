@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- esta parte del codigo alberga todo el contenido que no es visible para el usuario pero si para los motores de busqueda -->
+	<meta charset="UTF-8"/>
+	<title>Etiquetas HTML</title>
+	<!-- en una linea no mayor a 170 caracteres se debe de describir el contenido de la pagina concrniente a lo que encontrara el usuario, esta  descripción es importante que cada etiqueta meta para cada pagina debe de tener una descrpcioin propia para que tenga un mejor resultado en el buscador (buenas practicas de SEO (Search Engin Optimization))
+
+	Disposición de los elementosHTML (disply)
+	Hay 2 tipos de disposición por defecto
+	En linea: display:inline
+		El elemento sólo ocupa el espacion necesario a lo ancho.
+		Etiquetas en linea:
+			span, img,	a, b, i, strong, mark, inframe, audio, video.
+	En bloque: display:block
+		El elemento coupa todo el espacio a lo ancho, aunque no lo ocupe todo (es envidioso). Etiquetas en bloque:
+			div, h1....h6, p, header, nav, footer, section, article, aside.
+	-->
+	<meta name="description" content="En est documeto se revisaran algunas de las Etiquetas HTML" />
+	<style type="text/css">
+		div, h1, h3, h5
+		{
+			background: yellow; 
+			/*display: block;*/
+		}
+		span, h2, h4, h6
+		{
+			background: skyblue; 
+			/*display: inline;*/
+		}
+
+	</style>
+</head>
+<body>
+	<!-- aqui va todo lo que dice la pagina -->
+	<p>Contenido del documento, mi primer página web con HTML</p>
+	<!-- en la etiqueta IMG  tiene la estiqueta src que es la fuente para rastrear la imagen en las carpetas de la pagina web, mientras que la etiqueta ALT dentro de la etiqueta IMG son para el nombre de la imagen ante el buscador y despues de esto la etiqueta o atributo title para que se vea un nombre, border para ponerle un borde -->
+	<img src="HTML5.png" alt="HTML5" title="HTML5" border="10" width="256" height="256"  />
+	<div>Esto es un div</div>
+	<span>Esto es un span</span>
+	<!-- h${Encabezado de tipo$} -->
+	<!-- Solo debe de existir una etiqueta <h1> debido a que para los buscadores enfocan la informacion de esta etiqueta para rankear las paginas -->
+	<h1>Encabezado de tipo 1</h1>
+	<h2>Encabezado de tipo 2</h2>
+	<h3>Encabezado de tipo 3</h3>
+	<h4>Encabezado de tipo 4</h4>
+	<h5>Encabezado de tipo 5</h5>
+	<h6>Encabezado de tipo 6</h6>
+	<h7>Encabezado de tipo 7</h7>
+	<p>
+		Esto es un párrafo. Y éste texto está en <b>negritas</b>, <i>cursiva</i>, <strong>esta parte es importante</strong>, <mark>esta parte esta resaltada</mark>, <u>subrayado</u>,  <em>esto tiene énfasis</em>, y estsa son <small>letras chiquitas, como en los contratos</small>
+	</p>
+
+</body>
+</html>
